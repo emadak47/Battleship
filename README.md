@@ -21,17 +21,18 @@ On your turn, call out a colum and row. The program then checks that coordinate 
 The first player to sink all five of their opponent's ships wins the game.
 
 
-# Function descriptions:
-1- CheckValid(): will check if the inputted cooridinate for the hidden ship is valid. It will cross check the availability of the spaces with all previously inputted coordinates. If there is any overlap, the progeam will ask the user to input new coordinates. 
+# Function Description:
+1- Begin_Attack(): returns which player starts the attack based on random computer selection. 
 
-2- Win_Game(): will be called every round to check if any ships are left. If not then the player with ships still unsunken is declared the winner. Each player will ultimately recive a report on their own output file, detailing the final condition of their hidden grid and also the reslut of the game.
+2- CheckValid(): returns true if the inputted cooridinate for the hidden ship is valid. It will cross check the availability of the spaces with all previously inputted coordinates. If there is any overlap, the progeam will ask the user to input new coordinates. (File input)
 
-3- CheckHit_Miss(): will take the user input of coordinate that they target, and check if it hits or misses. 
+3- Win_Game(): will be called every round to check if any ships are left. If not then the player with ships still unsunken is declared the winner. Each player will ultimately recive a report on their own output file, detailing the final condition of their hidden grid and also the reslut of the game. (File output)
 
-4- UpdateGrid(): will update and then display the 'printed' grid of each player. The grid keeps record of all the user's past targets.
+4- CheckHit_Miss(): return true if the attack records a hit, and false otherwise. 
 
-5- CheckSinkShip(): will check if any of the ships have been fully 'hit' if so, the function will output "You sunk a battleship!".
+5- UpdateGrid(): will update and then display the 'printed' grid of each player. The grid keeps record of all the user's past targets. (Data structure for storing game status + Dynamic memory managment).
 
+6- CheckSinkShip(): will check if any of the ships have been fully 'hit' if so, the function will output "You sunk a battleship!".
 
 
 Reference: https://www.thesprucecrafts.com/the-basic-rules-of-battleship-411069 
