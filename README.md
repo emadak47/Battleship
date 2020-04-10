@@ -1,5 +1,5 @@
 # Team Members:
-Emad Akhras (3035662962)     Nelson Edward (3035603576)
+Emad Akhras (3035662962)     Edward Neslon (3035603576)
 
 # Game Description:
 
@@ -24,13 +24,13 @@ The first player to sink all five of their opponent's ships wins the game.
 # Function descriptions:
 1- CheckValid(): will check if the inputted cooridinate for the hidden ship is valid. It will cross check the availability of the spaces with all previously inputted coordinates. If there is any overlap, the progeam will ask the user to input new coordinates. 
 
-2- win_game(): will be called every round to check if any ships are left. If not then the player with ships still unsunken is declared the winner. Each player will ultimately recive a report on their own output file, detailing the final condition of their hidden grid and also the reslut of the game.
+2- Win_Game(): will be called every round to check if any ships are left. If not then the player with ships still unsunken is declared the winner. Each player will ultimately recive a report on their own output file, detailing the final condition of their hidden grid and also the reslut of the game.
 
 3- CheckHit_Miss(): will take the user input of coordinate that they target, and check if it hits or misses. 
 
 4- UpdateGrid(): will update and then display the 'printed' grid of each player. The grid keeps record of all the user's past targets.
 
-5- CheckSinkship(): will check if any of the ships have been fully 'hit' if so, the function will output "You sunk a battleship!".
+5- CheckSinkShip(): will check if any of the ships have been fully 'hit' if so, the function will output "You sunk a battleship!".
 
 
 
