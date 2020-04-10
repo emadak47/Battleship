@@ -1,5 +1,5 @@
 # Emad Akhras (3035662962)
-# Nelson Edward (
+# Nelson Edward (3035603576)
 
 # Game Description:
 
@@ -27,3 +27,15 @@ Mark each of your shots or attempts to fire on the enemy using your target grid 
 When it is your opponent's turn to fire shots at you, each time one of your ships receives a hit, put a red peg into the hole on the ship corresponding to the grid space. When one of your ships has every slot filled with red pegs, you must announce to your opponent when your ship is sunk. In classic play, the phrase is "You sunk my battleship!"
 
 The first player to sink all five of their opponent's ships wins the game.
+
+
+Function descriptions:
+
+Function 1: will check if the cooridinate for the hidden ship inputed by user is valid. it will cross check the coordinate with all the other coordinats previously inputed. if there are any overlap, the progeam will ask the user to input a nother coordinate.
+
+Function 2: will be called every round to check if any ships are left. if not then the player with ships still unsunken, is declared the winner.
+
+Functionn 3: will take the user input of coordinate that they target, and check if it hits or misses 
+
+Function 4: will print the updated grid of each player. the grid shows the results of all the user's past inputs.
+
