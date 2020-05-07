@@ -32,7 +32,5 @@ The first player to sink all five of their opponent's ships wins the game.
 
 5- UpdateGrid(): will update and then display the 'printed' grid of each player. The grid keeps record of all the user's past targets. (Data structure for storing game status + Dynamic memory managment).
 
-6- CheckSinkShip(): will check if any of the ships have been fully 'hit' if so, the function will output "You sunk a battleship!".
-
 
 Reference: https://www.thesprucecrafts.com/the-basic-rules-of-battleship-411069 
