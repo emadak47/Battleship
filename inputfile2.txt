@@ -1,0 +1,5 @@
+1 Cruiser 6 5 U
+2 Destroyer 2 7 R
+3 Submarine 2 2 D
+4 Battleship 10 7 R
+5 Carrier 10 1 U
