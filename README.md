@@ -23,6 +23,7 @@ The first player to sink all five of their opponent's ships wins the game.
 
 # Function Description:
 * Streamin.cpp:
+
 1- read_input(): To read input from the input files for each player. It also stores input in data structure. 
 
 * Game_Setting.cpp:
