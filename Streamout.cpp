@@ -11,6 +11,7 @@ int const rows = 10;
 int const columns = 10;
 
 //To print the linked list of a player (a recrod of all his moves) and to print his recrod grid
+//Linked List and player's record grid are printed in an outputfile corresponding to the player's number
 void print_output(string outputfile, Node * head, char grid[][columns+1])
 {
   Node * current = head;
