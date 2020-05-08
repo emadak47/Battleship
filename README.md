@@ -96,7 +96,9 @@ The first player to sink all five of their opponent's ships wins the game.
 
 # Non-Standard libraries:
 1- utiltiy: for pair coordinate (typedef pair<int, int> coordinate)
+
 2- fstream: to stream input and output from external files.
+
 3- iomanip: for setw(3)
 
 Reference: https://www.thesprucecrafts.com/the-basic-rules-of-battleship-411069 
