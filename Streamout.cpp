@@ -10,6 +10,7 @@ using namespace std;
 int const rows = 10;
 int const columns = 10;
 
+//To print the linked list of a player (a recrod of all his moves) and to print his recrod grid
 void print_output(string outputfile, Node * head, char grid[][columns+1])
 {
   Node * current = head;
@@ -38,14 +39,3 @@ void print_output(string outputfile, Node * head, char grid[][columns+1])
   }
   fout.close();
 }
-
-void print_list(Node *head)
-{
-  Node * current = head;
-  while(current != NULL)
-  {
-    cout << current->x << setw(3) << current->y << endl;
-    current = current->next;
-  }
-}
-
