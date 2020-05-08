@@ -27,11 +27,13 @@ The first player to sink all five of their opponent's ships wins the game.
 1- read_input(): To read input from the input files for each player. It also stores input in data structure. 
 
 * Game_Setting.cpp:
+
 1- Begin_Attack(): returns which player starts the attack based on a random computer selection. 
 2- Initialise_Record_Grid(): To initialise the printed grid (all * at first).
 3- Initialise_Ship_Grid(): To initialise the hidden grid (all zeros at first).
 
 * Game_Play.cpp:
+
 1- CheckHit_Miss(): returns true if ship input coordinate at run time hit a ship.
 2- CheckValid(): returns true if a square in the hidden grid is not occupied by another ship. 
 3- Possible_Shio_Expand(): return true if it is possible for a ship to expand in a specified direction.
@@ -40,15 +42,18 @@ The first player to sink all five of their opponent's ships wins the game.
 6- Expand_Ship(): To expand a ship on the hidden grid in a specified direction.
 
 * LinkedList.cpp:
+
 1- delete_list(): To delete linked list and free memory.
 2- Build_linked_list(): To build a linked list forward. 
 3- Search_History(): To search a linked list for an specific entry. 
 
 * Streamout.cpp:
+
 1- print_output(): To print the linked list of a player (a recrod of all his moves) and to print his recrod grid.
 2- print_list(): To print the linked list of a player.
 
 * Files.h:
+
 1- Node.h: Contains information about the data structure Node (used for linked list)
 2- ShipDetails.h: Contains information about the ships details (size, name, initial coordinate x & y, direction)
 3- Players.h: Contains information about the players (name, hidden grid, record grid, array of the struct ShipDetails)
@@ -63,6 +68,7 @@ The first player to sink all five of their opponent's ships wins the game.
 * Data structure for storing game status: ShipDetails, Players (Nested data structures).
 * Dynamic mempry managment: Two Linked Lists to store each players moves.  
 * File input/output: 
+
 1- File input for loading each player's input. 
 2- File output for printing a player's record of moves and his record grid. 
 * Program codes in multiple files: main.cpp, Game_Play.cpp, Game_Setting.cpp, LinkedList.cpp, Streamin.cpp, Streamout.cpp
