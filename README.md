@@ -2,7 +2,7 @@
 Emad Akhras (3035662962)     Edward Neslon (3035603576)
 
 # Important Note:
-* We haven't been aware of the fact that the project must be completed on Github. Therefore, most of the project was done on a external platform. We are extremely sorry. Here is a link to where the project wass initilaized: https://repl.it/join/ofpbkcve-emadakhras. Attached also is a link to an image that shows that the project was actually created a long time ago: https://drive.google.com/file/d/1sxFrKMjTMya07eC9_Skax6ZIMbAUO-b9/view?usp=sharing
+* We haven't been aware of the fact that the project must be completed on Github. Therefore, most of the project was done on a external platform. We are extremely sorry. Here is a link to where the project was initilaized: https://repl.it/join/ofpbkcve-emadakhras. Attached also is a link to an image that shows that the project was actually created a long time ago: https://drive.google.com/file/d/1sxFrKMjTMya07eC9_Skax6ZIMbAUO-b9/view?usp=sharing
 
 # Game Description:
 
