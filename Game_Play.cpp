@@ -5,22 +5,25 @@
 
 using namespace std;
 
+//Declare max. dimensions of both record & hidden grids
 int const rows = 10;
 int const columns =10;
 
+//returns true if input coordinate at run time hit a ship
 bool CheckHit_Miss(int x, int y, int grid[][columns+1])
 {
   if (grid[x][y] == 1) return true;
   return false;
 }
 
+//returns true if a square in the hidden grid is not occupied by another ship
 bool CheckValid(int x, int y, int grid[][columns+1])
 {
   if (grid[x][y] == 0) return true;
   else return false;
 }
 
-
+//return true if it is possible for a ship to expand in a specified direction
 bool Possible_Ship_Expand(int grid[][columns+1], int x, int y, char direction, int size)
 {
   bool valid = false;
@@ -77,6 +80,7 @@ bool Possible_Ship_Expand(int grid[][columns+1], int x, int y, char direction, i
   return valid;
 }
 
+//return true if all ships have been sunken in the hidden grid
 bool Win_Game(int grid[][columns+1])
 {
   for (int i = 1; i < rows+1 ; i++)
@@ -86,6 +90,7 @@ bool Win_Game(int grid[][columns+1])
   return true;
 }
 
+//To print the record grid for each player before the next round.
 void Print_Attack_Record(char grid[][columns+1])
 {
   for (int i = 1; i < rows+1; i++)
@@ -96,7 +101,7 @@ void Print_Attack_Record(char grid[][columns+1])
   }
 }
 
-
+//To expand a ship on the hidden grid in a specified direction.
 void Expand_Ship(int grid[][columns+1], int x, int y, char direction, int size)
 {
   if (direction == 'U')
