@@ -78,6 +78,24 @@ Note: A player's sets of data are exclusive of those of the other player.
 
 * An example inputfile1 & inputfile2 are provided in the repository for your reference. 
 
+_________________________________________________________
+
+* After running the program, users will need to input their names that correspond to their inputfile. 
+
+-> The game starts and the program will randomly choose one player to start first.
+
+* At the start of every round a gird annotating all the current players's past moves of hits and misses will be presented for reference. The player can then input an X and Y coordinate.
+
+Note: The coordinates have to be inputed in that particular order(being X then Y) and a single space should be inbetween them as a seperator.
+
+Note: Our program will not accept coordinates that have been inputed before (independent of users) or one that is outside of the 10X10 grid.
+
+* When a player loses all their ships, a winner is announced and an option to print their records will be given. 
+
+-> The program will print the record of moves of the winner in another folder.
+
+-> Dynamic memory allocated for linked lists will be freed and the program terminates.
+
 # Function Description:
 * Streamin.cpp:
 
