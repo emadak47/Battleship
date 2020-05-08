@@ -1,6 +1,13 @@
 # Team Members:
 Emad Akhras (3035662962)     Edward Neslon (3035603576)
 
+# Important Note:
+* We haven't been aware of the fact that the project must be completed on Github. Therefore, most of the project was done on a external platform. We are extremely sorry. Here is a link to where the project wass initilaized: https://repl.it/join/ofpbkcve-emadakhras. 
+
+Attached also is a link to an image that shows that the project was actually created a long time ago.  https://drive.google.com/file/d/1sxFrKMjTMya07eC9_Skax6ZIMbAUO-b9/view?usp=sharing
+
+I hope you understand.
+
 # Game Description:
 
 * Game Objective:
@@ -19,6 +26,8 @@ Players take turns calling out row and column coordinates in an attempt to ident
 On your turn, call out a colum and row. The program then checks that coordinate against the oponent's 'hidden' grid and reports "miss" if there is no ship there, or "hit" if you have correctly guessed a space that is occupied by a ship. The program then updates the 'printed' grid marking each of your shots by using 'H' to document the misses and 'X' to register the hits.
 
 The first player to sink all five of their opponent's ships wins the game.
+
+Reference: https://www.thesprucecrafts.com/the-basic-rules-of-battleship-411069 
 
 # Game Manual:
 
@@ -70,6 +79,8 @@ Note: A player's sets of data are exclusive of those of the other player.
                                                  4 Battleship 6 3 R
 
 -> The two ship will overlap over the (6,5) square. The program will show an error message and terminate.
+
+* An example inputfile1 & inputfile2 are provided in the repository for your reference. 
 
 # Function Description:
 * Streamin.cpp:
@@ -150,5 +161,3 @@ Note: A player's sets of data are exclusive of those of the other player.
 2- fstream: to stream input and output from external files.
 
 3- iomanip: for setw(3)
-
-Reference: https://www.thesprucecrafts.com/the-basic-rules-of-battleship-411069 
