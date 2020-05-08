@@ -45,7 +45,7 @@ The first player to sink all five of their opponent's ships wins the game.
 
 4- Win_Game(): return true if all ships have been sunken in the hidden grid.
 
-5- Print_Attack_Record(): To print the record grid for each player before each round.
+5- Print_Attack_Record(): To print the record grid for each player before the next round.
 
 6- Expand_Ship(): To expand a ship on the hidden grid in a specified direction.
 
