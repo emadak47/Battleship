@@ -41,10 +41,31 @@ The first player to sink all five of their opponent's ships wins the game.
 * LinkedList.cpp:
 1- delete_list(): To delete linked list and free memory.
 2- Build_linked_list(): To build a linked list forward. 
-3- Search_History(): To search a linked list for an specific entry.
+3- Search_History(): To search a linked list for an specific entry. 
 
 * Streamout.cpp:
 1- print_output(): To print the linked list of a player (a recrod of all his moves) and to print his recrod grid.
 2- print_list(): To print the linked list of a player.
+
+* Files.h:
+1- Node.h: Contains information about the data structure Node (used for linked list)
+2- ShipDetails.h: Contains information about the ships details (size, name, initial coordinate x & y, direction)
+3- Players.h: Contains information about the players (name, hidden grid, record grid, array of the struct ShipDetails)
+4- Game_PLay.h: contains all functions used in Game_Play.cpp
+5- Game_Setting.h: contains all functions used in Game_Setting.cpp
+6- LinkedList.h: contains all functions used in LinkedList.cpp
+7- Streamin.h: contains all functions used in Streamin.cpp
+8- Streamout.h: contains all functions used in Streamout.cpp
+
+#Code Requirments:
+* Generation of random game sets or events: The function "Begin_Attack()"
+* Data structure for storing game status: ShipDetails, Players (Nested data structures).
+* Dynamic mempry managment: Two Linked Lists to store each players moves.  
+* File input/output: 
+1- File input for loading each player's input. 
+2- File output for printing a player's record of moves and his record grid. 
+* Program codes in multiple files: main.cpp, Game_Play.cpp, Game_Setting.cpp, LinkedList.cpp, Streamin.cpp, Streamout.cpp
+* Proper indentation and naming styles: Proper names and neat organisation of the code.
+* In-code documentation: done on every file.
 
 Reference: https://www.thesprucecrafts.com/the-basic-rules-of-battleship-411069 
