@@ -37,7 +37,7 @@ The first player to sink all five of their opponent's ships wins the game.
 
 * Game_Play.cpp:
 
-1- CheckHit_Miss(): returns true if ship input coordinate at run time hit a ship.
+1- CheckHit_Miss(): returns true if the input coordinate at run time hit a ship.
 
 2- CheckValid(): returns true if a square in the hidden grid is not occupied by another ship. 
 
