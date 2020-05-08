@@ -57,7 +57,7 @@ The first player to sink all five of their opponent's ships wins the game.
 7- Streamin.h: contains all functions used in Streamin.cpp
 8- Streamout.h: contains all functions used in Streamout.cpp
 
-#Code Requirments:
+# Code Requirments:
 * Generation of random game sets or events: The function "Begin_Attack()"
 * Data structure for storing game status: ShipDetails, Players (Nested data structures).
 * Dynamic mempry managment: Two Linked Lists to store each players moves.  
