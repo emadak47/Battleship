@@ -22,15 +22,29 @@ The first player to sink all five of their opponent's ships wins the game.
 
 
 # Function Description:
-1- Begin_Attack(): returns which player starts the attack based on random computer selection. 
+* Streamin.cpp:
+1- read_input(): To read input from the input files for each player. It also stores input in data structure. 
 
-2- CheckValid(): returns true if the inputted cooridinate for the hidden ship is valid. It will cross check the availability of the spaces with all previously inputted coordinates. If there is any overlap, the progeam will ask the user to input new coordinates. (File input)
+* Game_Setting.cpp:
+1- Begin_Attack(): returns which player starts the attack based on a random computer selection. 
+2- Initialise_Record_Grid(): To initialise the printed grid (all * at first).
+3- Initialise_Ship_Grid(): To initialise the hidden grid (all zeros at first).
 
-3- Win_Game(): will be called every round to check if any ships are left. If not then the player with ships still unsunken is declared the winner. Each player will ultimately recive a report on their own output file, detailing the final condition of their hidden grid and also the reslut of the game. (File output)
+* Game_Play.cpp:
+1- CheckHit_Miss(): returns true if ship input coordinate at run time hit a ship.
+2- CheckValid(): returns true if a square in the hidden grid is not occupied by another ship. 
+3- Possible_Shio_Expand(): return true if it is possible for a ship to expand in a specified direction.
+4- Win_Game(): return true if all ships have been sunken in the hidden grid.
+5- Print_Attack_Record(): To print the record grid for each player before each round.
+6- Expand_Ship(): To expand a ship on the hidden grid in a specified direction.
 
-4- CheckHit_Miss(): return true if the attack records a hit, and false otherwise. 
+* LinkedList.cpp:
+1- delete_list(): To delete linked list and free memory.
+2- Build_linked_list(): To build a linked list forward. 
+3- Search_History(): To search a linked list for an specific entry.
 
-5- UpdateGrid(): will update and then display the 'printed' grid of each player. The grid keeps record of all the user's past targets. (Data structure for storing game status + Dynamic memory managment).
-
+* Streamout.cpp:
+1- print_output(): To print the linked list of a player (a recrod of all his moves) and to print his recrod grid.
+2- print_list(): To print the linked list of a player.
 
 Reference: https://www.thesprucecrafts.com/the-basic-rules-of-battleship-411069 
