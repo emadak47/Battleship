@@ -20,6 +20,56 @@ On your turn, call out a colum and row. The program then checks that coordinate 
 
 The first player to sink all five of their opponent's ships wins the game.
 
+# Game Manual:
+
+* Before running the program, each player should edit the inputfile (inputfile1 for player 1, inputfile2 for player 2).
+For example, both inputfile must have data in the following foramt:   ShipSize  ShipName  X   Y   Direction
+The parameters of each data type are as follows:
+
+* ShipSize and ShipName:    one of size 1 , Cruiser
+                            one of size 2 , Destroyer
+                            one of size 3 , Submarine
+                            one of size 4 , Battleship
+                            one of size 5 , Carrier
+                            
+                            (These combinations must not change).
+                            
+* Initial X & Y coordinates: 
+
+1- The initial position of each ship.
+
+2- All coordinates must be within 10 * 10 .
+
+2- No two coordinates in one grid for any player must overlap. 
+
+The following example illustrates how two ships' intial positions overlap.
+
+1 Crusier 1 1 L
+
+2 Destoyer 3 3 D
+
+3 Submarine 8 3 R
+
+4 Battleship 4 9 D
+
+5 Carrier 3 3 R
+
+Note: A player's sets of data are exclusive of those of the other player.
+
+* Direction: R: right, L: left, D: down, U: up
+
+- To specify the direction of expansion of a ship. For example player 1 input: 3 Submarine 4 5 D 
+
+-> Carrier will then occupy the following spaces: (4,5) & (5,5) & (6,5). 
+
+1- The expansion of one ship for one player must not overlap with another ship of the same player. For example:
+
+3 Submarine 4 5 D 
+
+4 Battleship 6 3 R
+
+-> The two ship will overlap over the (6,5) square. The program will show an error message and terminate.
+
 
 # Function Description:
 * Streamin.cpp:
