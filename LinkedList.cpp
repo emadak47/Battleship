@@ -2,6 +2,7 @@
 
 #include "LinkedList.h"
 
+//To delete linked list and free memory.
 void delete_list(Node * head)
 {
   while (head != NULL)
@@ -12,6 +13,7 @@ void delete_list(Node * head)
   } 
 }
 
+//To build a linked list forward.
 void Build_linked_list(Node * &head, Node * &tail, int x, int y)
 {
   Node * p = new Node;
@@ -32,6 +34,7 @@ void Build_linked_list(Node * &head, Node * &tail, int x, int y)
 	}	
 }
 
+//To search a linked list for an specific entry, and returns true if found.
 bool Search_History( Node * head, int x , int y )
 {
 	Node * current = head;
