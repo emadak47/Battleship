@@ -17,8 +17,10 @@ int const columns = 10;
 
 bool checkvalid = true;
 
+// To read input from the input files for each player. It also stores input in data structure.
 void read_input(string inputfile)
 {
+  //opens file
   ifstream fin;
   fin.open(inputfile.c_str());
   if(fin.fail())
@@ -28,11 +30,14 @@ void read_input(string inputfile)
   }
 
   string word;
+  //opens player 1's inputfile
   if (inputfile == "inputfile1.txt")
   {
     int DataType = 0, Ship = 0;
+    //extracts each word, each word is seperated by spaces
     while (fin >> word)
     {
+      //appends each data type with the data from the user's input
       if (DataType % 5 == 0)
         P1.S[Ship].ShipSize = stoi(word);
       if (DataType % 5 == 1)
@@ -44,6 +49,7 @@ void read_input(string inputfile)
       if (DataType % 5 == 4)
       {
         P1.S[Ship].direction = word[0];
+        //checks if the ship size is valid.
         if (P1.S[Ship].ShipSize < 1 || P1.S[Ship].ShipSize > 5)
         {
           cout << "The size of " << P1.PlayerName << "'s " << P1.S[Ship].ShipName << " is not consistent with the game directory." << endl;
@@ -51,6 +57,7 @@ void read_input(string inputfile)
           checkvalid = false;
           break;
         }
+        //checks if the coordinate input by user is within the grid.
         if ( P1.S[Ship].InitialPos.first < 1 || P1.S[Ship].InitialPos.first > 10 ) 
         {
           cout << "X coordinate of " << P1.PlayerName << "'s " << P1.S[Ship].ShipName << " is out of range" << endl;
@@ -65,6 +72,7 @@ void read_input(string inputfile)
           checkvalid = false;
           break;
         }
+        //checks if the initial positions of the ships overlap
         if (CheckValid(P1.S[Ship].InitialPos.first, P1.S[Ship].InitialPos.second, P1.ShipGrid) == false)
         {
         cout << "The initial coordinate for " << P1.S[Ship].ShipName << " is occupied." << endl;
@@ -72,6 +80,7 @@ void read_input(string inputfile)
         checkvalid = false;
         break;
         }
+        //checks if a ship can expand without overlap.
         if (Possible_Ship_Expand(P1.ShipGrid, P1.S[Ship].InitialPos.first, P1.S[Ship].InitialPos.second, P1.S[Ship].direction, P1.S[Ship].ShipSize) == false)
         {
           cout << P1.S[Ship].ShipName << " cannot expand in the " << P1.S[Ship].direction << " direction." << endl;
@@ -88,6 +97,7 @@ void read_input(string inputfile)
       DataType ++;
     }
   }
+  //takes input from second user
   if (inputfile == "inputfile2.txt")
   {
     int DataType = 0, Ship = 0;
