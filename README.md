@@ -23,17 +23,18 @@ The first player to sink all five of their opponent's ships wins the game.
 # Game Manual:
 
 * Before running the program, each player should edit the inputfile (inputfile1 for player 1, inputfile2 for player 2).
-For example, both inputfile must have data in the following foramt:   ShipSize  ShipName  X   Y   Direction
+For example, both inputfile must have data in the following foramt:   
+
+                                          ShipSize  ShipName  X   Y   Direction
+
 The parameters of each data type are as follows:
 
-* ShipSize and ShipName:    one of size 1 , Cruiser
-                            one of size 2 , Destroyer
-                            one of size 3 , Submarine
-                            one of size 4 , Battleship
-                            one of size 5 , Carrier
-                            
-                            (These combinations must not change).
-                            
+* ShipSize and ShipName: ((1, Crusier),(2, Destroyer), (3, Submarine), (4, Battleship), (5, Carrier)) 
+
+Note: A player cannot have two or more sets of the same combination, i.e. you cannot have two (2, Destroyer).
+
+Note: The order doesn't matter but each set should be positioned in a new line.
+
 * Initial X & Y coordinates: 
 
 1- The initial position of each ship.
@@ -42,17 +43,17 @@ The parameters of each data type are as follows:
 
 2- No two coordinates in one grid for any player must overlap. 
 
-The following example illustrates how two ships' intial positions overlap.
+The following example illustrates how two ships' intial positions could overlap (Destroyer & Carrier)
 
-1 Crusier 1 1 L
+                                                 1 Crusier 1 1 L
 
-2 Destoyer 3 3 D
+                                                 2 Destoyer 3 3 D
 
-3 Submarine 8 3 R
+                                                 3 Submarine 8 3 R
 
-4 Battleship 4 9 D
+                                                 4 Battleship 4 9 D
 
-5 Carrier 3 3 R
+                                                 5 Carrier 3 3 R
 
 Note: A player's sets of data are exclusive of those of the other player.
 
@@ -64,12 +65,11 @@ Note: A player's sets of data are exclusive of those of the other player.
 
 1- The expansion of one ship for one player must not overlap with another ship of the same player. For example:
 
-3 Submarine 4 5 D 
+                                                 3 Submarine 4 5 D 
 
-4 Battleship 6 3 R
+                                                 4 Battleship 6 3 R
 
 -> The two ship will overlap over the (6,5) square. The program will show an error message and terminate.
-
 
 # Function Description:
 * Streamin.cpp:
