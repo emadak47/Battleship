@@ -25,7 +25,7 @@ The first player to sink all five of their opponent's ships wins the game.
 * Before running the program, each player should edit the inputfile (inputfile1 for player 1, inputfile2 for player 2).
 For example, both inputfile must have data in the following foramt:   
 
-                                          ShipSize  ShipName  X   Y   Direction
+                                      ShipSize  ShipName  X   Y   Direction
 
 The parameters of each data type are as follows:
 
